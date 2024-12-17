@@ -1,10 +1,14 @@
 const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
+
+require('dotenv').config();
 const PORT= process.env.PORT || 8000;
+const mongoURI = process.env.MONGODB_URI; // MongoDB URI from .env
+console.log(process.env.MONGODB_URI);
 
 async function run(){
-    await mongoose.connect('mongodb://127.0.0.1:27017/ServiceCenter') ;
+    await mongoose.connect(mongoURI) ;
     console.log("connected");
 
 }
@@ -22,6 +26,6 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(PORT,()=>console.log("server is listening http://localhost:8000/"))
+app.listen(PORT,()=>console.log(`server is listening http://localhost:${PORT}/`))
 
 // open(`http://localhost:8087/`)
