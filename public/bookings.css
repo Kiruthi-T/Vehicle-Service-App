@@ -48,11 +48,14 @@ button:hover{
     #serviceDetails{
         display: grid;
         grid-template-columns: 30% 30% 30% ;
+        height: auto;
+
     } 
 }
 @media screen and (max-width:480px) {
     #serviceDetails{
         display: grid;
         grid-template-columns: 40% 40%  ;
+        height: auto;
     } 
 }
