@@ -35,5 +35,7 @@ h1{
     #con{
         flex-direction: column;
         text-align: center;
+        margin-top: 10vh;
+
     }
 }
