@@ -50,3 +50,9 @@ button:hover{
         grid-template-columns: 30% 30% 30% ;
     } 
 }
+@media screen and (max-width:48px) {
+    #serviceDetails{
+        display: grid;
+        grid-template-columns: 40% 40%  ;
+    } 
+}
