@@ -55,3 +55,12 @@ input[type="text"],#mail,#pass{
     width: 50%;
     background-color: wheat;
 }
+@media screen and (max-width:480px) {
+    form {
+        width: 80%;
+        padding:0
+    }
+    input[type="text"],#mail,#pass{
+        width: 35%;
+    }
+}
