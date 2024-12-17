@@ -37,3 +37,8 @@ button:hover {
     border-radius: 10px;
 
 }
+@media screen and (max-width:480px) {
+    #myform{
+        width: 300px;
+    }
+}
