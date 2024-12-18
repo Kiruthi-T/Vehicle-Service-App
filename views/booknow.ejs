@@ -15,17 +15,17 @@
         <center>
         <div id="myform">
             <form action="/home/bookings" method="post">
-                <label>Name :</label><input type="text" name="name"><br>
-                <label>Viechle :</label><input type="text" name="vehicle"><br>
+                <label>Name :</label><input type="text" name="name" required><br>
+                <label>Viechle :</label><input type="text" name="vehicle" required><br>
                 <label>Service :</label>
-                <select name="service" id="select">
+                <select name="service" id="select" required>
                     <% serviceDetails.forEach((details)=>{%>
                         <option>
                             <%=details.service %>
                         </option>
                         <%});%>
                 </select><br>
-                <label>Cantact :</label><input type="number" name="contact" id="number"><br>
+                <label>Cantact :</label><input type="number" name="contact" id="number" required><br>
                 <button type="submit">Book</button>
             </form>
         </div>
